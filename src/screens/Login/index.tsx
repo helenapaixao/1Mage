@@ -6,22 +6,26 @@ import Button from "../../components/Button";
 import { LogoContainer, LogoImage, MiddleTextContainer } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 
+
 const SingIn = () => {
   const navigation = useNavigation();
 
   const handleCreateAccount = () => {
     navigation.navigate("SingIn");
   };
+
+  const handleLogin = () => {
+     navigation.navigate("Home")
+   }
   return (
     <>
-      {/*   <Header/> */}
       <Container>
         <LogoContainer>
           <LogoImage source={require("../../../assets/logo.svg")} />
         </LogoContainer>
         <Input label="Email" placeholder={""} />
         <Input label="Password" placeholder={""} />
-        <Button label="Log in" onPress={() => null} />
+        <Button label="Log in" onPress={handleLogin} />
         <MiddleTextContainer>
           <Text style={{ color: "#64748B" }}>Or continue with</Text>
           <TouchableOpacity onPress={handleCreateAccount}>
