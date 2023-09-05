@@ -8,6 +8,7 @@ interface InputProps {
 
 const Input = ({ label }: InputProps) => {
   const [isFocused, setIsFocused] = useState<boolean>(false);
+    const isPassword = label.toLowerCase() === 'password';
 
   const handleFocus = () => {
     setIsFocused(true);
@@ -22,6 +23,7 @@ const Input = ({ label }: InputProps) => {
       <Label>{label}</Label>
       <InputCustom
         placeholder={label}
+        secureTextEntry={isPassword}
         onFocus={handleFocus}
         onBlur={handleBlur}
         isFocused={isFocused}
