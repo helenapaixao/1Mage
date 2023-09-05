@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 
 export const Container = styled(TouchableOpacity)`
   background-color: #000113;
-  padding: 10px, 0px, 10px, 0px;
+  padding: 10px;
   border-radius: 5px;
   height: 40px;
   width: 311px;
