@@ -14,15 +14,15 @@ export const AppRoutes = () => {
       }}
     >
       <Screen
-        name="Home"
-        component={SingIn}
+        name="Login"
+        component={Login}
         options={{
           headerShown: false,
         }}
       />
       <Screen
         name="NewFood"
-        component={Login}
+        component={SingIn}
         options={{
           headerBackTitleVisible: false,
           title: "Nova refeição",

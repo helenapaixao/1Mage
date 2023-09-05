@@ -1,11 +1,15 @@
 import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-
+import Input from "../../components/Input"
+import Container from '../../components/Container';
 
 
 const SingIn = () => {
   return (
-    <Text>SingIn</Text>
+    <Container>
+      <Input label='Email' placeholder={''} />
+      <Input label='Password' placeholder={''}/>
+    </Container>
   )
 }
 
