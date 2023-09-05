@@ -10,9 +10,9 @@ export const Container = styled(TouchableOpacity)`
   width: 311px;
 `
 
-export const ButtonText = styled(Text)`
+export const ButtonText = styled.Text`
   color: white;
-  font-family: 'Poppins';
+  font-family: 'Poppins-Medium';
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;

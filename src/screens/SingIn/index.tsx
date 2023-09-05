@@ -1,12 +1,25 @@
-import React from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-
-
+import React from "react";
+import Input from "../../components/Input";
+import Container from "../../components/Container";
+import Button from "../../components/Button";
+/* import { LogoContainer, LogoImage} from './styles' */
+import Header from "../../components/Header";
 
 const SingIn = () => {
   return (
-    <Text>SingIn</Text>
-  )
-}
+    <>
+      {/*   <Header/> */}
+      <Container>
+        <Input label="Name" placeholder={""} />
+        <Input label="Surname" placeholder={""} />
+        <Input label="Email" placeholder={""} />
+        <Input label="Password" placeholder={""} />
+        <Input label="Confirm Password" placeholder={""} />
 
-export default SingIn
+        <Button label="Register" onPress={() => null} />
+      </Container>
+    </>
+  );
+};
+
+export default SingIn;

@@ -8,7 +8,7 @@ interface InputProps {
 
 const Input = ({ label }: InputProps) => {
   const [isFocused, setIsFocused] = useState<boolean>(false);
-    const isPassword = label.toLowerCase() === 'password';
+const isPassword = label.toLowerCase() === 'password' || label.toLowerCase() === 'confirm password';
 
   const handleFocus = () => {
     setIsFocused(true);

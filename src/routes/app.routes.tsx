@@ -21,7 +21,7 @@ export const AppRoutes = () => {
         }}
       />
       <Screen
-        name="NewFood"
+        name="SingIn"
         component={SingIn}
         options={{
           headerBackTitleVisible: false,
@@ -30,10 +30,7 @@ export const AppRoutes = () => {
             backgroundColor: "#DDDEDF",
           },
           headerTintColor: "#1B1D1E",
-          headerTitleStyle: {
-            fontFamily: "Nunito_700Bold",
-            fontWeight: "bold",
-          },
+         
         }}
       />
     </Navigator>
