@@ -1,6 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
-import Header from '../../components/Header'; // Importe o componente Header
+import { View, Text } from 'react-native';
+import Header from '../../components/Header'; 
+import Card from '../../components/Card';
+import {TextCategories} from './styles'
 import SearchInput from '../../components/InputSearch';
 
 const Home: React.FC = () => {
@@ -16,7 +18,9 @@ const Home: React.FC = () => {
     <View>
       <Header title="Home" onMenuPress={handleMenuPress} onBellPress={handleBellPress} />
 
-      <SearchInput onSearch={() => null}/>
+      <SearchInput onSearch={() => null} />
+      <Card />
+      <TextCategories>Categories</TextCategories>
     </View>
   );
 };

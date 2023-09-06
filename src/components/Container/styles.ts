@@ -8,5 +8,5 @@ export const CenteredContainer = styled.View`
 `
 
 export const Content = styled.View`
-  /* Estilos do conteúdo, se necessário */
+  background-color: #ffff;
 `
